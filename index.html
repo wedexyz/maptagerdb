@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>map iseng</title>
-  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<audio id="alarm_1"><source src="bhy.wav" type="audio/ogg"></audio>
+<audio id="alarm_2"><source src="bhy.wav" type="audio/ogg"></audio>
+<audio id="alarm_3"><source src="bhy.wav" type="audio/ogg"></audio>
+<audio id="alarm_4"><source src="bhy.wav" type="audio/ogg"></audio>
 
-</head>
+<audio id="warn_1"><source src="warning.wav" type="audio/ogg"></audio>
+<audio id="warn_2"><source src="warning.wav" type="audio/ogg"></audio>
+<audio id="warn_3"><source src="warning.wav" type="audio/ogg"></audio>
+<audio id="warn_4"><source src="warning.wav" type="audio/ogg"></audio>
+
 <body>
-<!-- partial:index.partial.html -->
-<div id="map" style="color:rgba(246, 255, 0, 0.317);">
-</div>
+  <div class="row">
+    <div class="col-9 col-s-9"id="map" style="color:rgba(246, 255, 0, 0.317);">
+    </div>
+  
+    <div class="col-3 col-s-3 menu">
+        <ul>
+          <li>Status  </li>
+          <li>Point 1: <span id="vp1"></span></li>
+          <li>Point 2: <span id="vp2"></span> </li>
+          <li>Point 3: <span id="vp3"></span></li>
+          <li>Point 4: <span id="vp4"></span></li>
+        </ul>
+      </div>
+
+  </div>
+  
+
+
+  
 
 
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -22,5 +45,12 @@
 <script src="db.js"></script>
 <script  src="script.js"></script>
 
+</head>
+<body>
+
+
+
 </body>
 </html>
+
+
